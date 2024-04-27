@@ -1,0 +1,127 @@
+body {
+    background-color: #eee;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 11px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    position: relative;
+}
+
+.btn-outline-success {
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.7s ease;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    /* Change to desired text color on hover */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+    /* Adjust the value as needed for the desired spacing */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+/* .parent {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+} */
+
+.c1 {
+    font-family: "Playfair Display", serif;
+    padding-left: 70px;
+    padding-top: 130px;
+    /* position: absolute; */
+    /* top: 103px; */
+    /* left: 34px; */
+}
+
+.c1 p {
+    text-align: justify;
+    /* width: 70%; */
+    width: 400px;
+}
+
+.c1 h1 {
+    font-size: 47px;
+}
+
+.gc .button {
+    padding: 7px;
+    /* width: 160px; */
+    border-radius: 15px;
+    margin-top: 20px;
+    color: #fff;
+    font-family: "Dancing Script", cursive;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Add transition effect */
+    border: 1px solid black;
+    background-color: rgb(242, 41, 41);
+}
+
+.gc .button:hover {
+    background-color: rgb(243, 60, 60);
+    /* Darker background color on hover */
+    color: #fff;
+}
+
+.gc {
+    display: flex;
+}
+.gc .youtube{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.btn-watch-video{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-watch-video:hover{
+    color: rgb(206, 38, 38);
+    border: 1px solid red;
+}
+
+.c2 {
+    padding-top: 60px;
+    padding-left: 100px;
+}
+
+@media screen and (max-width : 870px) {
+    .c2 .img2{
+        height: 400px;
+    }
+    .c1{
+        text-align: center;
+    }
+    .c1 p{
+        text-align: center;
+        width: auto;
+    }
+    .gc {
+        text-align: center;
+        width: auto;
+        padding-left: 100px;
+    }
+}
+@media screen and (max-width : 1125px) {
+    .c2 .img2{
+        height: 390px;
+    }
+}
+
+@media screen and (max-width : 966px) {
+    .c2 .img2{
+        height: 350px;
+    }
+}

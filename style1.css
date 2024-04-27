@@ -1,0 +1,916 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+body {
+    background-color: #eee;
+}
+
+.aboutUsSection{
+    background-color: #fff;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 1);
+    /* box-shadow: 0 11px 7px rgba(0, 0, 0, 0.1); */
+    border-radius: 5px;
+    position: fixed;
+    /* Make the navbar fixed at the top */
+    top: 0;
+    /* Position it at the top of the viewport */
+    left: 0;
+    /* Position it at the left of the viewport */
+    right: 0;
+    /* Position it at the right of the viewport */
+    z-index: 1000;
+    /* Ensure it's above other content */
+    width: 100%;
+    /* Make it take full width of the viewport */
+}
+
+.navbar .nav-button{
+    padding: 7px;
+    width: 160px;
+    border-radius: 25px;
+    color: black;
+    font-family: "Dancing Script", cursive;
+    transition: background-color 0.5s ease, color 0.3s ease;
+    /* Add transition effect */
+    border: 2px solid black;
+}
+
+.navbar .nav-button:hover{
+    color: #fff;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.navbar .nav-heading{
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 70px;
+}
+
+.btn-outline-success {
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.7s ease;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    /* Change to desired text color on hover */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+    /* Adjust the value as needed for the desired spacing */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.parent {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.c1 {
+    font-family: "Playfair Display", serif;
+    height: 100%;
+    width: 100%;
+    /* padding-left: 70px;
+    padding-top: 130px; */
+    /* position: absolute; */
+    /* top: 103px; */
+    /* left: 34px; */
+}
+
+.c1 .c1-p1 {
+    text-align: justify;
+    width: 70%;
+    padding-left: 70px;
+    /* padding-top: 20px; */
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.c1 .c1-h1 {
+    padding-top: 200px;
+    padding-left: 70px;
+    font-size: 70px;
+    font-family: "Amatic SC", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.c1 .button {
+    padding: 7px;
+    width: 30%;
+    border-radius: 25px;
+    margin-top: 20px;
+    color: #fff;
+    font-family: "Dancing Script", cursive;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Add transition effect */
+    border: 1px solid black;
+    background-color: rgb(242, 41, 41);
+}
+
+.c1 .button:hover {
+    background-color: rgb(243, 60, 60);
+    /* Darker background color on hover */
+    color: #fff;
+}
+
+.gc {
+    display: flex;
+    padding-left: 70px;
+}
+
+.gc .youtube {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.btn-watch-video {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    transition: border-color 0.3s ease, color 0.3s ease;
+    border-radius: 25px;
+}
+
+.btn-watch-video:hover {
+    color: rgb(206, 38, 38);
+    border: 1px solid red;
+}
+
+.c2 {
+    height: 100%;
+    width: 100%;
+    padding-top: 150px;
+    /* padding-left: 100px; */
+}
+
+.c2 .c2-img1 {
+    padding-left: 90px;
+}
+
+/* -------------------------------------------------
+               ABOUT US SECTION
+---------------------------------------------------- */
+.aboutUsSection{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.aboutUsHeader{
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+}
+
+.aboutUs{
+    margin: 0;
+}
+
+.learnAboutUs{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+}
+
+.aboutUsImages{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.leftImage{
+    margin-left: 20px;
+}
+
+
+.aboutUsImages .leftImage img{
+    margin-top: 40px;
+    margin-left: 30px;
+    object-fit: cover;
+}
+
+.aboutUsImages .rightImage{
+    margin-top: 40px;
+    margin-left: 50px;
+    text-align: justify;
+}
+
+.aboutUsImages .rightImage .bookATable{
+    text-align: center;
+    background-color: bisque;
+    font-weight: 700;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    width: 510px;
+    transition: 0.3s;
+}
+
+.aboutUsImages .rightImage .bookATable:hover{
+        /* Increase height and width on hover */
+        transform: scale(1.1);
+        /* Optionally, you can adjust other properties like box-shadow */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.aboutUsImages .rightImage .bookATable #call{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 40px;
+}
+
+.aboutUsImages .rightImage #img1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.aboutUsImages .rightImage #img1:hover{
+    /* Increase height and width on hover */
+    transform: scale(1.1);
+    /* Optionally, you can adjust other properties like box-shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.rightImage .desc{
+    width: 500px;
+    font-size: 15px;
+}
+
+/* 
+------------------------------------------------------
+                    Why Us Section
+------------------------------------------------------ */
+
+.whyUsSection{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.whyUsSection .why-box {
+    padding: 30px;
+    background: rgb(198, 33, 33);
+    color: #fff;
+}
+
+.whyUsSection .why-box h3 {
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+  
+.whyUsSection .why-box .more-btn {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 6px 30px 8px 30px;
+    color: #fff;
+    border-radius: 50px;
+    transition: all ease-in-out 0.4s;
+  }
+
+.whyUsSection .why-box .more-btn:hover {
+    color: red;
+    background: #fff;
+}
+
+.whyUsSection .icon-box {
+    text-align: center;
+    background: #fff;
+    padding: 40px 30px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(55, 55, 63, 0.1);
+    transition: 0.3s;
+}
+
+.whyUsSection .icon-box:hover {
+    /* Increase height and width on hover */
+    transform: scale(1.1);
+    /* Optionally, you can adjust other properties like box-shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.whyUsSection .icon-box i {
+    color: rgb(211, 39, 39);
+    margin-bottom: 30px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    background: rgba(206, 18, 18, 0.1);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+}
+
+.whyUsSection .icon-box h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+    /* font-family: var(--font-secondary); */
+}
+
+.whyUsSection .icon-box p {
+    font-size: 15px;
+    color: #6c757d;
+  }
+
+
+
+/* 
+----------------------------------------------------------------
+                Statistics Counter
+---------------------------------------------------------------- */
+
+.statSection{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("C:/Users/USER/Downloads/Yummy/assets/img/stats-bg.jpg") center center;    
+    background-size: cover;
+    padding: 100px 0;
+
+}
+
+@media screen and (max-width: 1365px) {
+    .statSection {
+      background-attachment: fixed;
+    }
+}
+
+
+.statSection .stats-item {
+    padding: 30px;
+    width: 100%;
+}
+  
+.statSection .stats-item span {
+    font-size: 48px;
+    display: block;
+    color: #fff;
+    font-weight: 700;
+}
+  
+.statSection .stats-item p {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.6);
+}
+  
+
+/* 
+--------------------------------------------------------
+                    Menu  Section
+--------------------------------------------------------*/
+
+.menuSection{
+    /* margin-bottom: 40px; */
+    background-color: #fff;
+}
+
+.menuSectionHeader{
+    padding-top: 70px;
+    text-align: center;
+}
+
+
+.menuSectionHeader .checkMenu {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+}
+
+.menuImages{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    justify-content: center; /* Align items horizontally to the center */
+    align-items: center; /* Align items vertically to the center */
+    padding-top: 50px;
+}
+
+.menuImages .imageContainer{
+    text-align: center;
+}
+
+.imageContainer img{
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.imageContainer img:hover{
+    /* Increase height and width on hover */
+    transform: scale(1.2);
+    /* Optionally, you can adjust other properties like box-shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+}
+
+.imageContainer .imageLabel{
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+/* 
+-----------------------------------------------------------------
+                Testimonials Section
+-----------------------------------------------------------------*/
+
+.testimonialSection{
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+
+.testimonialHeader {
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+.testimonialHeader .sayings{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+}
+
+.testimonialSection .testimonialSection-carousel,
+.testimonialSection .testimonialSection-slider {
+  overflow: hidden;
+}
+
+.testimonialSection .testimonial-item .testimonial-content {
+    border-left: 3px solid rgb(220, 48, 48);
+    padding-left: 30px;
+  }
+
+.testimonialSection .testimonial-item .testimonial-img {
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin: 0 auto;
+}
+
+
+.testimonialSection .testimonial-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #212529;
+    font-family: "Inter", sans-serif;
+    
+}
+
+.testimonialSection .testimonial-item h4 {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 0 0 10px 0;
+    font-family: "Inter", sans-serif;
+}
+
+.testimonialSection .testimonial-item .fa-quote-left,
+.testimonialSection .testimonial-item .fa-quote-right {
+  color: #f05656;
+  font-size: 20px;
+  line-height: 0;
+}
+
+.testimonialSection .swiper-pagination {
+    margin-top: 40px;
+    position: relative;
+  }
+  
+  .testimonialSection .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #d1d1d7;
+    opacity: 1;
+  }
+  
+  .testimonialSection .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: red;
+  }
+
+
+/* ---------------------------------------------------------
+                   Chefs Section                        
+------------------------------------------------------------*/
+
+
+.chefSection{
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: #fff;
+}
+
+.chefSection .chefHeader{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.chefHeader .pChefs{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    
+}
+
+.chefSection .icon-box {
+    text-align: center;
+    border-radius: 10px;
+    background: #fff;
+    padding: 0px 0px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+
+
+.chefSection .icon-box:hover {
+    /* Increase height and width on hover */
+    transform: scale(1.1);
+    /* Optionally, you can adjust other properties like box-shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.chefSection .icon-box h4 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 30px;
+    /* margin: 0 0 30px 0; */
+    /* font-family: var(--font-secondary); */
+}
+
+.chefSection .icon-box p {
+    font-size: 15px;
+    color:#6c757d;
+  }
+
+.chefSection .icon-box img{
+    border-radius: 10px;
+}
+
+/* -----------------------------------------------------
+                    Gallery Section
+--------------------------------------------------------*/
+
+.gallerySection{
+    padding-bottom: 100px;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+
+.gallerySection .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+  }
+  
+.gallerySection .galleryHeader{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.galleryHeader .checkGallery{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+}
+
+.gallerySection .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #d1d1d7;
+    opacity: 1;
+  }
+  
+  .gallerySection .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: red;
+  }
+  
+  .gallerySection .swiper-slide-active {
+    text-align: center;
+  }
+
+/* .gallerySection img{
+    height: 200px;
+    width: 280px;
+} */
+
+
+/* ------------------------------------------------------
+                    Footer Section
+---------------------------------------------------------*/
+
+.footer{
+    padding-top: 30px;
+    background-color: #1f1f24;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 50px 0;
+}
+
+.footer .copyright{
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    justify-content: center;
+}
+
+.AllDetails .link{
+    text-align: center;
+    justify-content: center;
+}
+
+.footer h4 {
+    font-size: 16px;
+    padding-bottom: 5px;
+    color: #fff;
+    position: relative;
+  }
+
+  .footer .icon {
+    margin-right: 15px;
+    font-size: 22px;
+  }
+  
+  .footer .icons {
+    margin-right: 15px;
+    font-size: 22px;
+
+  }
+
+  .footer .socialLinks a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.3s;
+    margin-right: 15px;
+  }
+
+  .footer .socialLinks a:hover {
+    color: #fff;
+    border-color: #fff;
+  }
+  
+
+@media screen and (max-width : 1200px) {
+    .c2 .c2-img1 {
+        padding-left: 30px;
+    }
+    .parent1-c1-gc1{
+        width: 600px;
+    }
+
+    .leftImage{
+        margin-left: 90px;
+    }
+
+    .aboutUsImages .leftImage img{
+        width: 550px;
+        height: 640px;
+        margin-left: 0px;
+    }
+
+    .rightImage .desc{
+        width: 370px;
+        margin-left: 30px;
+    }
+
+    .rightImage #img1{
+        width: 380px;
+        height: 230px;
+        margin-left: 30px;
+    }
+
+    .aboutUsImages .rightImage .bookATable{
+        width: 380px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width : 1100px) {
+
+    .aboutUsImages .rightImage{
+        margin-top: 40px;
+        margin-left: 30px;
+        text-align: justify;
+    }
+
+    .rightImage #img1{
+        width: 300px;
+        height: 200px;
+    }
+    .aboutUsImages .rightImage .bookATable{
+        width: 300px;
+        padding: 0;
+    }
+
+    .rightImage .desc{
+        width: 300px;
+        margin-left: 30px;
+    }
+
+}
+
+@media screen and (max-width : 992px) {
+    .parent {
+        display: block;
+    }
+
+    .c1 {
+        text-align: center;
+    }
+
+    .c1 .c1-h1 {
+        padding-top: 90px;
+        padding-left: 0px;
+        font-size: 47px;
+    }
+
+    .c1 .c1-p1 {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        padding-left: 0px;
+        font-size: 20px;
+    }
+
+    .gc {
+        display: flex;
+        justify-content: center;
+        /* Align contents horizontally */
+        align-items: center;
+        /* Align contents vertically */
+    }
+
+    .gc .button {
+        width: 25%;
+    }
+
+    .c2 {
+        display: flex;
+        justify-content: center;
+        /* Align contents horizontally */
+        padding-left: 0px;
+        padding-top: 60px;
+        /* height: 100vh; Set the height of the div to the full viewport height */
+        /* align-items: center; Align contents vertically */
+    }
+
+    .c2 .c2-img1 {
+        height: 550px;
+        padding-left: 0px;
+    }
+
+    /* -------------------------------------------------
+                ABOUT US SECTION
+    ---------------------------------------------------- */
+
+    .aboutUsImages{
+        display: block;
+    }
+
+    .leftImage{
+        margin-left: 0px;
+    }
+
+    .aboutUsImages .leftImage img{
+        display: block;
+        margin: 0 auto;           /* Align the image to the center horizontally */
+        max-width: 100%;            /* Ensure the image does not exceed the width of its container */
+        width: 670px;
+    }
+    
+    .aboutUsImages .rightImage {
+        display: flex;
+        flex-direction: column;            /* Stack the child elements vertically */
+        align-items: center;              /* Align child elements horizontally */
+        text-align: center;               /* Center-align the text */
+        margin-left: 0px;
+    }
+
+    .rightImage .desc{
+        width: 100%;             /* Set the width of the paragraph */
+        max-width: 600px;         /* Set a maximum width if needed */
+        margin-left: 0px;
+        
+    }
+
+    .aboutUsImages .rightImage #img1{
+        width: 670px;
+        height: 300px;
+        margin-left: 0px;
+    }
+
+    .rightImage .bookATable{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    /* -----------------------------------------------------
+                        Menu Section
+    --------------------------------------------------------*/
+
+    .menuImages {
+        display: block;
+    }
+
+    .imageContainer img{
+        height: 450px;
+        width: 450px;
+    }
+
+}
+
+@media screen and (max-width : 640px) {
+    .c2 .c2-img1 {
+        height: 450px;
+    }
+
+    .aboutUsImages .leftImage img{
+        width: 550px;
+    }
+
+    .aboutUsImages .rightImage #img1{
+        width: 550px;
+    }
+
+    .bookATable{
+        width: 550px;
+    }
+
+    .aboutUsImages .rightImage .desc{
+        width: 90%;             /* Set the width of the paragraph */
+        max-width: 550px;         /* Set a maximum width if needed */
+        font-size: 14px;
+    }
+
+
+}
+
+@media screen and (max-width : 460px) {
+    .c2 .c2-img1 {
+        height: 380px;
+    }
+
+    .c1 .c1-h1 {
+        font-size: 36px;
+    }
+
+    .c1 .c1-p1 {
+        font-size: 15px;
+    }
+    .c1 .button{
+        font-size: 13px;
+        width: 40%;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width : 376px) {
+    .c1 .c1-h1 {
+        font-size: 30px;
+    }
+    .c1 .c1-p1 {
+        font-size: 12px;
+    }
+    .c2 .c2-img1{
+        height: 340px;
+    }
+}
+
+/* @media screen and (max-width : 921px) {
+    .c2 .c2-img1{
+        height: 360px;
+    }
+    .c1 .c1-h1{
+        font-size: 37px;
+        padding-left: 50px;
+    }
+    .c1 p{
+        padding-left: 50px;
+    }
+    .c1 .gc .button{
+        font-size: ;
+    }
+
+} */
+/* @media screen and (max-width : 802px) {
+    .c1 .c1-h1{
+        font-size: 35px;
+        padding-left: 40px;
+    }
+    .c1 p{
+        padding-left: 40px;
+    }
+} */

@@ -1,0 +1,12 @@
+create a box which has proper padding border margin and you have to use two buttons when you click on first button even number will be displyed in the box and it stays for only 5 seconds and when you click on the second button a moving ball of grey color will be rotating inside the box and when you click on that ball it should stop
+create a simple web application using bootstrap in which you have to demonstrate some event 
+Make use of Sass for creating a web applocation in which you can modify background color of danger as blue and you have to use this danger color for ceating a simple portfolio websites.
+create array of employees in which emloy class ,employ salary will be depicted we can also make use of nested arrays for showcasing that object values.
+create a grid in which the classes of columns has been divided into two and ten ,there should be five rows that will showcase a subject name in first column , description in second column , and also provide appropriate css to it .
+
+model view controller.
+restaurant
+you - user
+menu - view 
+order - request
+waiter - controller
